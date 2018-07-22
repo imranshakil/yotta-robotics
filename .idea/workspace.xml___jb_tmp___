@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47d14455-e6f3-4d7b-a226-c247002ae6f5" name="Default" comment="" />
+    <list default="true" id="47d14455-e6f3-4d7b-a226-c247002ae6f5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/publicsite/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/apis/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/customers/customer_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/customers/customer_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/customers/customer_statement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/dashboard/dashboard_admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/developer/module_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/developer/module_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/publicsite/common/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/publicsite/common/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YottaRobotics/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/YottaRobotics/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/publicsite/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,26 +36,60 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YottaRobotics/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="103">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="1101" column="7" lean-forward="true" selection-start-line="1101" selection-start-column="7" selection-end-line="1101" selection-end-column="7" />
+            <state relative-caret-position="145">
+              <caret line="1139" column="24" selection-start-line="1139" selection-start-column="24" selection-end-line="1139" selection-end-column="24" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#6280#6285#0#HTML" expanded="true" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#11104#11109#0#HTML" expanded="true" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#18002#18007#0#HTML" expanded="true" />
+                <element signature="e#19412#19417#0#HTML" expanded="true" />
+                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#20979#20984#0#HTML" expanded="true" />
+                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#29213#29218#0#HTML" expanded="true" />
+                <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#37701#37706#0#HTML" expanded="true" />
+                <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#42538#42543#0#HTML" expanded="true" />
+                <element signature="e#43014#43019#0#HTML" expanded="true" />
+                <element signature="e#43834#43839#0#HTML" expanded="true" />
+                <element signature="e#44653#44658#0#HTML" expanded="true" />
+                <element signature="e#45474#45479#0#HTML" expanded="true" />
+                <element signature="n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#54028#54033#0#HTML" expanded="true" />
+                <element signature="n#div#3;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="294">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -44,6 +100,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -51,7 +108,14 @@
     <findStrings>
       <find>link</find>
       <find>.js</find>
+      <find>jpg&quot;</find>
+      <find>demo</find>
+      <find>fa fa-shopping-cart</find>
+      <find>demo-panel</find>
     </findStrings>
+    <replaceStrings>
+      <replace>jpg' %}&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,8 +124,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/YottaRobotics/settings.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/publicsite/urls.py" />
+        <option value="$PROJECT_DIR$/YottaRobotics/urls.py" />
+        <option value="$PROJECT_DIR$/publicsite/views.py" />
+        <option value="$PROJECT_DIR$/templates/publicsite/index.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -102,12 +171,26 @@
             <path>
               <item name="YottaRobotics" type="b2602c69:ProjectViewProjectNode" />
               <item name="YottaRobotics" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YottaRobotics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YottaRobotics" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YottaRobotics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YottaRobotics" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YottaRobotics" type="b2602c69:ProjectViewProjectNode" />
               <item name="YottaRobotics" type="462c0819:PsiDirectoryNode" />
-              <item name="YottaRobotics" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="publicsite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -124,9 +207,12 @@
     <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\YottaRobotics\YottaRobotics\templates\publicsite" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\YottaRobotics\YottaRobotics\static" />
       <recent name="E:\YottaRobotics\YottaRobotics\templates" />
+      <recent name="E:\YottaRobotics\YottaRobotics\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -188,8 +274,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34133792" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26243567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -214,6 +300,49 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/YottaRobotics/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#14;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#15;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#16;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#17;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YottaRobotics/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
@@ -226,10 +355,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23037">
           <caret line="1097" column="25" lean-forward="true" selection-start-line="1097" selection-end-line="1098" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#14;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#15;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#16;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#17;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -247,7 +398,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21693">
           <caret line="1033" column="26" lean-forward="true" selection-start-line="1033" selection-start-column="26" selection-end-line="1033" selection-end-column="26" />
@@ -268,20 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YottaRobotics/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="87" column="60" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YottaRobotics/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/python3.6/Lib/site-packages/django/templatetags/i18n.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -289,17 +426,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/publicsite/views.py___jb_tmp___" />
+    <entry file="file://$PROJECT_DIR$/templates/common/leftsidebar.html" />
+    <entry file="file://$PROJECT_DIR$/templates/common/header.html" />
+    <entry file="file://$PROJECT_DIR$/templates/common/appsloader.html" />
+    <entry file="file://$PROJECT_DIR$/publicsite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="126">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/publicsite/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="1101" column="7" lean-forward="true" selection-start-line="1101" selection-start-column="7" selection-end-line="1101" selection-end-column="7" />
+        <state relative-caret-position="168">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YottaRobotics/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/publicsite/index-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YottaRobotics/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="87" column="60" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html___jb_tmp___">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="1139" column="24" selection-start-line="1139" selection-start-column="24" selection-end-line="1139" selection-end-column="24" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#6280#6285#0#HTML" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#11104#11109#0#HTML" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#18002#18007#0#HTML" expanded="true" />
+            <element signature="e#19412#19417#0#HTML" expanded="true" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#20979#20984#0#HTML" expanded="true" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#29213#29218#0#HTML" expanded="true" />
+            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#37701#37706#0#HTML" expanded="true" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#42538#42543#0#HTML" expanded="true" />
+            <element signature="e#43014#43019#0#HTML" expanded="true" />
+            <element signature="e#43834#43839#0#HTML" expanded="true" />
+            <element signature="e#44653#44658#0#HTML" expanded="true" />
+            <element signature="e#45474#45479#0#HTML" expanded="true" />
+            <element signature="n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#54028#54033#0#HTML" expanded="true" />
+            <element signature="n#div#3;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="214" column="107" selection-start-line="214" selection-start-column="107" selection-end-line="214" selection-end-column="107" />
+          <folding>
+            <element signature="e#1241#1248#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

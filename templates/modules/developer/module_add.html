@@ -1,0 +1,172 @@
+{% include "admin/base_site.html" %}
+{% load i18n static %}
+
+
+
+<div id="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="content-header" class="clearfix">
+                        <div class="pull-left">
+                            <h1>
+                                {% if request.GET.rf %}
+                                    {% if request.GET.rf != 'None' %}
+                                        {{ request.GET.rf }}
+                                    {% else %}
+                                        Dashboard
+                                    {% endif %}
+                                {% else %}
+                                    Dashboard
+                                {% endif %}
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+         <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default card-view">
+
+                    <div class="panel-heading">
+                        <div class="pull-left">
+                            <h6 class="panel-title txt-title">{% if datalist.0.id == '' %} {% trans 'Add New Module' %} {% else %} {% trans 'Modify Module -' %} {{ datalist.0.name }} {% endif %}</h6>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-md-6 left"></div>
+                        <div class="col-md-6" style="text-align: right">
+                            <a class="btn btn-primary" href="{% url 'developer:modulelist' %}"><i
+                                        class="fa fa-list"></i> {% trans 'Module List' %}</a>
+                        </div>
+                    </div>
+
+
+                    <div class="panel-wrapper collapse in">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-wrap">
+                                        <form action="{% if datalist.0.id == '' %} {% url 'developer:moduleAdd' %} {% else %} {% url 'developer:moduleUpdate' datalist.0.id %} {% endif %}" method="post" class="form-horizontal">
+                                                {% csrf_token %}
+                                                <div class="form-body">
+                                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>{% trans 'Module Details' %}</h6>
+                                                <hr class="light-grey-hr"/>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'Name' %}</label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" class="form-control" name="name" value="{{ datalist.0.name }}" placeholder="{% trans 'Name' %}">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'Label' %}</label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" class="form-control" name="label" value="{{ datalist.0.label }}" placeholder="{% trans 'Label' %}">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'Icon' %}</label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" class="form-control" name="icon" value="{{ datalist.0.icon }}" placeholder="{% trans 'Icon' %}">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'Icon Color' %}</label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" class="form-control" name="icon_color" value="{{ datalist.0.icon_color }}" placeholder="{% trans 'Icon Color' %}">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'URL' %}</label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" class="form-control" name="urlkey" value="{{ datalist.0.urlkey }}" placeholder="{% trans 'URL' %}">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'Prefix' %}</label>
+                                                            <div class="col-md-9">
+                                                                <input type="text" class="form-control" name="prefix" value="{{ datalist.0.prefix }}" placeholder="{% trans 'Prefix' %}">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'Priority' %}</label>
+                                                            <div class="col-md-9">
+                                                                <select name="prioritys" class="form-control">
+                                                                    {% for i in range %}
+                                                                        <option value="{{ i }}"  {% if i == datalist.0.prioritys %} selected {% endif %} >{{ i }}</option>
+                                                                    {% endfor %}
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">{% trans 'Status' %}</label>
+                                                            <div class="col-md-9">
+                                                                <select name="status" class="form-control">
+                                                                    <option value="1" {% if datalist.0.status == 1 %} selected {% endif %} >Active</option>
+                                                                    <option value="0" {% if datalist.0.status == 0 %} selected {% endif %} >InActive</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                                <!-- /Row -->
+                                                <!-- /Row -->
+                                            </div>
+                                            <div class="form-actions mt-10">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-3 col-md-9">
+                                                                <button type="submit" name="Save" class="btn btn-success  mr-10">{% trans 'Save' %}</button>
+                                                                <button type="button" class="btn btn-default">{% trans 'Cancel' %}</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6"> </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    {% include 'common/footer.html' %}
+</div>

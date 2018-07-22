@@ -1,3 +1,5 @@
+{% load i18n static %}
+
 <!DOCTYPE html>
 <html lang="zxx" class="js">
 <!-- Mirrored from demo.themenio.com/ico/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jul 2018 18:59:14 GMT -->
@@ -5,47 +7,44 @@
     <meta charset="utf-8">
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-          content="ICO Crypto is a modern and elegant landing page, created for ICO Agencies and digital crypto currency investment website.">
+    <meta name="description" content="">
     <!-- Fav Icon -->
-    <link rel="shortcut icon" href="images/favicon.png"><!-- Site Title  --><title>ICO Crypto - Bitcoin &amp;
-    Cryptocurrency Landing Page Template</title><!-- Vendor Bundle CSS -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Site Title  -->
+    <title>ICO Crypto - Bitcoin &amp;Cryptocurrency Landing Page Template</title>
+    <!-- Vendor Bundle CSS -->
 
-
-    {% include 'base.html' %}
-
-    <script>(function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-91615293-2', 'auto');
-    ga('send', 'pageview');</script>
+    {% include "base.html" %}
 </head>
-<body class="theme-dark io-lungwort" data-spy="scroll" data-target="#mainnav" data-offset="80"><!-- Header -->
-<header class="site-header is-sticky"><!-- Place Particle Js -->
-    <div id="particles-js" class="particles-container particles-js"></div><!-- Navbar -->
+<body class="theme-dark io-lungwort" data-spy="scroll" data-target="#mainnav" data-offset="80">
+<!-- Header -->
+
+<header class="site-header is-sticky">
+    <!-- Place Particle Js -->
+    <div id="particles-js" class="particles-container particles-js"></div>
+    <!-- Navbar -->
     <div class="navbar navbar-expand-lg is-transparent" id="mainnav">
-        <nav class="container"><a class="navbar-brand animated" data-animate="fadeInDown" data-delay=".65"
-                                  href="index.html"><img class="logo logo-dark" alt="logo" src="images/logo.png"
-                                                         srcset="images/logo2x.png 2x"><img class="logo logo-light"
-                                                                                            alt="logo"
-                                                                                            src="images/logo-full-white.png"
-                                                                                            srcset="images/logo-full-white2x.png 2x"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"><span
-                    class="navbar-toggler-icon"><span class="ti ti-align-justify"></span></span></button>
+        <nav class="container">
+         <a class="navbar-brand animated" data-animate="fadeInDown" data-delay=".65" href="index.html">
+     <img class="logo logo-dark" alt="logo" src="" srcset="images/logo2x.png 2x">
+ <img class="logo logo-light" alt="logo" src="{% static 'images/logo-full-white.png' %}"srcset="images/logo-full-white2x.png 2x">
+         </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+                <span class="navbar-toggler-icon">
+                    <span class="ti ti-align-justify"></span>
+                </span>
+            </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
                 <ul class="navbar-nav animated remove-animation" data-animate="fadeInDown" data-delay=".9">
-                    <li class="nav-item"><a class="nav-link menu-link" href="#about">About<span class="sr-only">(current)</span></a>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#about">About
+                        <span class="sr-only">(current)</span>
+                    </a>
                     </li>
                     <li class="nav-item"><a class="nav-link menu-link" href="#why">Why</a></li>
-                    <li class="nav-item"><a class="nav-link menu-link" href="#benifits">Benifits</a></li>
-                    <li class="nav-item"><a class="nav-link menu-link" href="#tokenSale">Token Sale</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#benifits">Benifits</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#tokenSale">Token Sale</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link menu-link" href="#roadmap">Roadmap</a></li>
                     <li class="nav-item"><a class="nav-link menu-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link menu-link" href="#faq">Faqs</a></li>
@@ -63,7 +62,10 @@
                 </ul>
             </div>
         </nav>
-    </div><!-- End Navbar --><!-- Banner/Slider -->
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Banner/Slider -->
     <div id="header" class="banner banner-full d-flex align-items-center banner-lungwort">
         <div class="background-shape bs-right"></div>
         <div class="container">
@@ -98,9 +100,21 @@
                     </div><!-- .col  -->
                     <div class="col-lg-6 order-first order-lg-last">
                         <div class="header-image-lg animated" data-animate="fadeInUp" data-delay="1.35"><img
-                                src="images/lungwort/header-image.png" alt="header-image"></div>
-                    </div><!-- .col  --></div><!-- .row  --></div><!-- .banner-content  --></div><!-- .container  -->
-    </div><!-- End Banner/Slider --></header><!-- End Header --><!-- Start Section -->
+                                src="{% static 'images/lungwort/header-image.png' %}"alt="header-image">
+                        </div>
+                    </div>
+                    <!-- .col  -->
+                </div><!-- .row  -->
+            </div>
+            <!-- .banner-content  -->
+        </div>
+        <!-- .container  -->
+    </div>
+    <!-- End Banner/Slider -->
+</header>
+
+<!-- End Header -->
+<!-- Start Section -->
 <div class="section section-pad-sm no-pb section-bg-dark">
     <div class="container">
         <div class="row justify-content-center">
@@ -146,13 +160,15 @@
                     </div>
                 </div><!-- .row  --></div>
         </div>
-    </div><!-- .conatiner  --></div><!-- Start Section --><!-- Start Section -->
+    </div><!-- .conatiner  --></div>
+<!-- Start Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg-dark" id="about">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="res-m-btm text-center animated" data-animate="fadeInUp" data-delay=".1"><img
-                        src="images/lungwort/graph-lungwort-a.png" alt="graph"></div>
+                        src="{% static 'images/lungwort/graph-lungwort-a.png' %}"alt="graph"></div>
             </div><!-- .col  -->
             <div class="col-md-6">
                 <div class="text-block"><h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".2">What
@@ -168,14 +184,15 @@
                     <p class="animated" data-animate="fadeInUp" data-delay=".6">At the end, Our aims to integrate all
                         companies, employees, and business assets into a unified blockchain ecosystem, which will make
                         business truly efficient, transparent, and reliable.</p></div>
-            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div><!-- Start Section -->
+            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div>
+<!-- Start Section -->
 <!-- Start Section -->
 <div class="section section-pad no-pb section-bg">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-md-6">
                 <div class="res-m-btm animated" data-animate="fadeInUp" data-delay=".1"><img
-                        src="images/lungwort/graph-lungwort-b.png" alt="graph"></div>
+                        src="{% static 'images/lungwort/graph-lungwort-b.png' %}"alt="graph"></div>
             </div><!-- .col  -->
             <div class="col-md-6 order-md-first order-last">
                 <div class="text-block"><h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".2">power
@@ -188,14 +205,15 @@
                     <p class="animated" data-animate="fadeInUp" data-delay=".6">Nemo enim ipsam voluptatem quia voluptas
                         sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                         voluptatem sequi nesciun quis nostrut.</p></div>
-            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div><!-- Start Section -->
+            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div>
+<!-- Start Section -->
 <!-- Start Section -->
 <div class="section section-pad no-pb section-bg">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-md-6">
                 <div class="res-m-btm animated" data-animate="fadeInUp" data-delay=".1"><img
-                        src="images/lungwort/graph-lungwort-c.png" alt="graph"></div>
+                        src="{% static 'images/lungwort/graph-lungwort-c.png' %}"alt="graph"></div>
             </div><!-- .col  -->
             <div class="col-md-6">
                 <div class="text-block"><h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".2">
@@ -208,14 +226,15 @@
                         sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
                         inventore veritatis et quasi architecto beatae vitae dicta sunt. Nemo enim ipsam voluptatem quia
                         voluptas sit aspernatur aut odit.</p></div>
-            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div><!-- Start Section -->
+            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div>
+<!-- Start Section -->
 <!-- Start Section -->
 <div class="section section-pad section-bg">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-md-5">
                 <div class="res-m-btm animated" data-animate="fadeInUp" data-delay=".1"><img
-                        src="images/lungwort/graph-lungwort-d.png" alt="graph"></div>
+                        src="{% static 'images/lungwort/graph-lungwort-d.png' %}" alt="graph"></div>
             </div><!-- .col  -->
             <div class="col-md-6 order-md-first order-last">
                 <div class="text-block"><h6 class="heading-sm-s2 animated" data-animate="fadeInUp" data-delay=".2">
@@ -231,7 +250,8 @@
                     <p class="animated" data-animate="fadeInUp" data-delay=".6">Nemo enim ipsam voluptatem quia voluptas
                         sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                         voluptatem sequi nesciun quis nostrut.</p></div>
-            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div><!-- Start Section -->
+            </div><!-- .col  --></div><!-- .row  --></div><!-- .conatiner  --></div>
+<!-- Start Section -->
 <!-- Start Section -->
 <div class="section section-pad section-bg-alt" id="why">
     <div class="background-shape bs-reverse"></div>
@@ -250,7 +270,7 @@
         <div class="row">
             <div class="col-md-4 res-m-bttm">
                 <div class="features-box-s4 animated" data-animate="fadeInUp" data-delay=".4">
-                    <div class="features-icon-s4"><img src="images/lungwort/icon-a.png" alt="icon"></div>
+                    <div class="features-icon-s4"><img src="{% static 'images/lungwort/icon-a.png' %}"alt="icon"></div>
                     <h5 class="features-title-s4">Ultra Fast &amp; Secure</h5><span class="features-subtitle-s4">Instant Private Transaction</span>
                     <p>Millions of datasets indexedin culpa qui officia id est laborum</p><a href="#"
                                                                                              class="features-action"><em
@@ -258,7 +278,7 @@
             </div>
             <div class="col-md-4 res-m-bttm">
                 <div class="features-box-s4 animated" data-animate="fadeInUp" data-delay=".5">
-                    <div class="features-icon-s4"><img src="images/lungwort/icon-b.png" alt="icon"></div>
+                    <div class="features-icon-s4"><img src="{% static 'images/lungwort/icon-b.png' %}"alt="icon"></div>
                     <h5 class="features-title-s4">Highly Scalable</h5><span class="features-subtitle-s4">Limitless Applications</span>
                     <p>A proprietary version sunt in culpa qui officia deserunt mollit.</p><a href="#"
                                                                                               class="features-action"><em
@@ -266,7 +286,7 @@
             </div>
             <div class="col-md-4">
                 <div class="features-box-s4 animated" data-animate="fadeInUp" data-delay=".6">
-                    <div class="features-icon-s4"><img src="images/lungwort/icon-c.png" alt="icon"></div>
+                    <div class="features-icon-s4"><img src="{% static 'images/lungwort/icon-c.png' %}"alt="icon"></div>
                     <h5 class="features-title-s4">Reliable &amp; Low Cost</h5><span class="features-subtitle-s4">Instant Private Transaction</span>
                     <p>A unique community enim ad minima veniam, quis nostrum.</p><a href="#"
                                                                                      class="features-action"><em
@@ -284,7 +304,9 @@
             </div>
         </div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg" id="benifits">
     <div class="container">
         <div class="row">
@@ -302,14 +324,14 @@
         <div class="row mb--x8">
             <div class="col-lg-6">
                 <div class="benefits-item animated" data-animate="fadeInUp" data-delay=".4">
-                    <div class="benefits-icon"><img src="images/lungwort/icon-d.png" alt="icon"></div>
+                    <div class="benefits-icon"><img src="{% static 'images/lungwort/icon-d.png' %}"alt="icon"></div>
                     <div class="benefits-txt"><p>ICO Crypto makes <strong> you the sole owner of a secure </strong>
                         decentralize registry for your collection an products</p></div>
                 </div>
             </div><!-- .col -->
             <div class="col-lg-6">
                 <div class="benefits-item animated" data-animate="fadeInUp" data-delay=".5">
-                    <div class="benefits-icon"><img src="images/lungwort/icon-e.png" alt="icon"></div>
+                    <div class="benefits-icon"><img src="{% static 'images/lungwort/icon-e.png' %}"alt="icon"></div>
                     <div class="benefits-txt"><p>The registry is a <strong>tamper-proof</strong> that uses <strong>dolor
                         sit amet,</strong> conse ctetur sed eiusmod tempor incidid labore Lorem consectetur adipiscing.
                     </p></div>
@@ -317,21 +339,23 @@
             </div><!-- .col -->
             <div class="col-lg-6">
                 <div class="benefits-item animated" data-animate="fadeInUp" data-delay=".6">
-                    <div class="benefits-icon"><img src="images/lungwort/icon-f.png" alt="icon"></div>
+                    <div class="benefits-icon"><img src="{% static 'images/lungwort/icon-f.png' %}"alt="icon"></div>
                     <div class="benefits-txt"><p>Provide your customer with a <strong>lorem ipsum dolor sit amet, conse
                         ctetur sed</strong> eiusmod tempor incidid labore Lorem ipsum dolor.</p></div>
                 </div>
             </div><!-- .col -->
             <div class="col-lg-6">
                 <div class="benefits-item animated" data-animate="fadeInUp" data-delay=".7">
-                    <div class="benefits-icon"><img src="images/lungwort/icon-g.png" alt="icon"></div>
+                    <div class="benefits-icon"><img src="{% static 'images/lungwort/icon-g.png' %}"alt="icon"></div>
                     <div class="benefits-txt"><p>ICO Crypto the prowess of blockchain <strong>labore et dolore</strong>
                         dolor sit amet, conse <strong>Ctetur sed</strong> eiusmod tempor labore dolor adipiscing.</p>
                     </div>
                 </div>
             </div><!-- .col --></div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg-alt">
     <div class="container">
         <div class="row">
@@ -348,7 +372,7 @@
         </div>
         <div class="row align-items-center">
             <div class="col-lg-6 res-m-bttm">
-                <div class="animated" data-animate="fadeInUp" data-delay=".4"><img src="images/jasmine/app-mockup.png"
+                <div class="animated" data-animate="fadeInUp" data-delay=".4"><img src="{% static 'images/jasmine/app-mockup.png"
                                                                                    alt="mockup"></div>
             </div><!-- .col -->
             <div class="col-lg-6">
@@ -371,7 +395,9 @@
                 </div>
             </div><!-- .col --></div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg" id="tokenSale">
     <div class="container">
         <div class="row">
@@ -450,19 +476,21 @@
                 <div class="single-chart res-m-bttm"><h3 class="sub-heading-s2 animated" data-animate="fadeInUp"
                                                          data-delay=".1">Token Allocation</h3>
                     <div class="animated" data-animate="fadeInUp" data-delay=".2"><img
-                            src="images/lungwort/chart-lungwort-a.png" alt="chart"></div>
+                            src="{% static 'images/lungwort/chart-lungwort-a.png' %}"alt="chart"></div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="single-chart res-m-bttm"><h3 class="sub-heading-s2 animated" data-animate="fadeInUp"
                                                          data-delay=".3">Operating Allocation</h3>
                     <div class="animated" data-animate="fadeInUp" data-delay=".4"><img
-                            src="images/lungwort/chart-lungwort-b.png" alt="chart"></div>
+                            src="{% static 'images/lungwort/chart-lungwort-b.png' %}"alt="chart"></div>
                 </div>
             </div>
         </div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg-dark">
     <div class="container">
         <div class="row">
@@ -479,7 +507,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 res-m-bttm animated" data-animate="fadeInUp" data-delay=".4">
                 <div class="document-item">
-                    <div class="document-img"><img src="images/lungwort/doc-a.png" alt="doc"></div>
+                    <div class="document-img"><img src="{% static 'images/lungwort/doc-a.png' %}"alt="doc"></div>
                     <h6 class="document-title">Whitepaper</h6>
                     <ul class="document-links">
                         <li><a href="#">ENG</a></li>
@@ -489,7 +517,7 @@
             </div>
             <div class="col-lg-3 col-md-6 res-m-bttm animated" data-animate="fadeInUp" data-delay=".5">
                 <div class="document-item">
-                    <div class="document-img"><img src="images/lungwort/doc-b.png" alt="doc"></div>
+                    <div class="document-img"><img src="{% static 'images/lungwort/doc-b.png' %}"alt="doc"></div>
                     <h6 class="document-title">Onepager</h6>
                     <ul class="document-links">
                         <li><a href="#">ENG</a></li>
@@ -499,7 +527,7 @@
             </div>
             <div class="col-lg-3 col-md-6 res-m-bttm animated" data-animate="fadeInUp" data-delay=".6">
                 <div class="document-item">
-                    <div class="document-img"><img src="images/lungwort/doc-c.png" alt="doc"></div>
+                    <div class="document-img"><img src="{% static 'images/lungwort/doc-c.png' %}"alt="doc"></div>
                     <h6 class="document-title">Privacy Policy</h6>
                     <ul class="document-links">
                         <li><a href="#">ENG</a></li>
@@ -509,7 +537,7 @@
             </div>
             <div class="col-lg-3 col-md-6 animated" data-animate="fadeInUp" data-delay=".7">
                 <div class="document-item">
-                    <div class="document-img"><img src="images/lungwort/doc-d.png" alt="doc"></div>
+                    <div class="document-img"><img src="{% static 'images/lungwort/doc-d.png' %}"alt="doc"></div>
                     <h6 class="document-title">Terms of Sales</h6>
                     <ul class="document-links">
                         <li><a href="#">ENG</a></li>
@@ -519,7 +547,9 @@
             </div>
         </div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg" id="roadmap">
     <div class="container">
         <div class="row">
@@ -647,7 +677,9 @@
         </div>
         <div class="gaps size-2x d-lg-none"></div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg-alt section-fix" id="team">
     <div class="background-shape bs-right"></div>
     <div class="container">
@@ -665,7 +697,7 @@
         <div class="row text-center">
             <div class="col-lg-3 col-sm-6">
                 <div class="team-circle-des animated" data-animate="fadeInUp" data-delay=".4">
-                    <div class="team-circle-img"><img src="images/team-a-sq.jpg" alt="team"></div>
+                    <div class="team-circle-img"><img src="{% static 'images/team-a-sq.jpg' %}"alt="team"></div>
                     <h5>Waylon Dalton</h5><span>CEO &amp; Lead Blockchain</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                     <ul class="team-circle-social">
@@ -677,7 +709,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="team-circle-des animated" data-animate="fadeInUp" data-delay=".5">
-                    <div class="team-circle-img"><img src="images/team-b-sq.jpg" alt="team"></div>
+                    <div class="team-circle-img"><img src="{% static 'images/team-b-sq.jpg' %}"alt="team"></div>
                     <h5>Stefan Harary</h5><span>CEO &amp; Lead Blockchain</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                     <ul class="team-circle-social">
@@ -689,7 +721,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="team-circle-des animated" data-animate="fadeInUp" data-delay=".6">
-                    <div class="team-circle-img"><img src="images/team-c-sq.jpg" alt="team"></div>
+                    <div class="team-circle-img"><img src="{% static 'images/team-c-sq.jpg' %}"alt="team"></div>
                     <h5>Moises Teare</h5><span>CEO &amp; Lead Blockchain</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                     <ul class="team-circle-social">
@@ -701,7 +733,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="team-circle-des animated" data-animate="fadeInUp" data-delay=".7">
-                    <div class="team-circle-img"><img src="images/team-d-sq.jpg" alt="team"></div>
+                    <div class="team-circle-img"><img src="{% static 'images/team-d-sq.jpg' %}"alt="team"></div>
                     <h5>Gabriel Bernal</h5><span>CEO &amp; Lead Blockchain</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                     <ul class="team-circle-social">
@@ -722,7 +754,7 @@
         <div class="row">
             <div class="col-lg-3 col-sm-6">
                 <div class="team-circle-des animated" data-animate="fadeInUp" data-delay=".9">
-                    <div class="team-circle-img"><img src="images/team-e-sq.jpg" alt="team"></div>
+                    <div class="team-circle-img"><img src="{% static 'images/team-e-sq.jpg' %}"alt="team"></div>
                     <h5>Dylan Finch</h5><span>Board Advisor</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                     <ul class="team-circle-social">
@@ -734,7 +766,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="team-circle-des animated" data-animate="fadeInUp" data-delay="1">
-                    <div class="team-circle-img"><img src="images/team-f-sq.jpg" alt="team"></div>
+                    <div class="team-circle-img"><img src="{% static 'images/team-f-sq.jpg' %}"alt="team"></div>
                     <h5>Julian Paten</h5><span>Board Advisor</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                     <ul class="team-circle-social">
@@ -746,7 +778,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="team-circle-des animated" data-animate="fadeInUp" data-delay="1.1">
-                    <div class="team-circle-img"><img src="images/team-g-sq.jpg" alt="team"></div>
+                    <div class="team-circle-img"><img src="{% static 'images/team-g-sq.jpg' %}"alt="team"></div>
                     <h5>Jaxon Kilburn</h5><span>Board Advisor</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                     <ul class="team-circle-social">
@@ -757,7 +789,9 @@
                 </div>
             </div>
         </div><!-- .row  --></div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg" id="media-partner">
     <div class="container">
         <div class="row">
@@ -773,48 +807,50 @@
             <div class="row text-center">
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay=".3"><img
-                            src="images/partner-xs-left-a.png" alt="partner"></div>
+                            src="{% static 'images/partner-xs-left-a.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay=".4"><img
-                            src="images/partner-xs-left-b.png" alt="partner"></div>
+                            src="{% static 'images/partner-xs-left-b.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay=".5"><img
-                            src="images/partner-xs-left-c.png" alt="partner"></div>
+                            src="{% static 'images/partner-xs-left-c.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay=".6"><img
-                            src="images/partner-xs-left-d.png" alt="partner"></div>
+                            src="{% static 'images/partner-xs-left-d.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay=".7"><img
-                            src="images/partner-xs-left-e.png" alt="partner"></div>
+                            src="{% static 'images/partner-xs-left-e.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay=".8"><img
-                            src="images/partner-xs-left-f.png" alt="partner"></div>
+                            src="{% static 'images/partner-xs-left-f.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay=".9"><img
-                            src="images/partner-sm-left-a.png" alt="partner"></div>
+                            src="{% static 'images/partner-sm-left-a.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay="1.0"><img
-                            src="images/partner-sm-left-b.png" alt="partner"></div>
+                            src="{% static 'images/partner-sm-left-b.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay="1.1"><img
-                            src="images/partner-sm-left-c.png" alt="partner"></div>
+                            src="{% static 'images/partner-sm-left-c.png' %}"alt="partner"></div>
                 </div>
                 <div class="col-sm-2 col-6">
                     <div class="single-partner animated" data-animate="fadeInUp" data-delay="1.2"><img
-                            src="images/partner-sm-left-d.png" alt="partner"></div>
+                            src="{% static 'images/partner-sm-left-d.png' %}"alt="partner"></div>
                 </div>
             </div>
         </div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section section-pad section-bg-alt" id="faq">
     <div class="container">
         <div class="row">
@@ -991,8 +1027,9 @@
                         </div><!-- .tab-pane --></div><!-- .tab-content --></div><!-- .tab-custom --></div><!-- .col -->
             <div class="col-md-4">
                 <div class="fake-class animated" data-animate="fadeInUp" data-delay=".5"><img
-                        src="images/jasmine/graph-jasmine-e.png" alt="graph"></div>
-            </div><!-- .col --></div><!-- .row --></div><!-- .container --></div><!-- End Section -->
+                        src="{% static 'images/jasmine/graph-jasmine-e.png' %}"alt="graph"></div>
+            </div><!-- .col --></div><!-- .row --></div><!-- .container --></div>
+<!-- End Section -->
 <!-- Start Section -->
 <div class="section section-pad-md section-bg" id="contact">
     <div class="container">
@@ -1037,10 +1074,12 @@
             </div><!-- .col -->
             <div class="col-lg-4 align-self-center">
                 <div class="fake-class animated" data-animate="fadeInUp" data-delay="1.1"><img
-                        src="images/jasmine/graph-jasmine-f.png" alt="graph"></div>
+                        src="{% static 'images/jasmine/graph-jasmine-f.png' %}"alt="graph"></div>
             </div><!-- .col --></div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section subscribe-section-s2 section-bg section-dark" id="join">
     <div class="container">
         <div class="subscribe-box animated" data-animate="fadeInUp" data-delay=".2">
@@ -1064,7 +1103,9 @@
             </div>
         </div>
     </div>
-</div><!-- End Section --><!-- Start Section -->
+</div>
+<!-- End Section -->
+<!-- Start Section -->
 <div class="section footer-scetion footer-lungwort">
     <div class="container">
         <div class="row text-center">
@@ -1083,20 +1124,26 @@
                     <li class="animated" data-animate="fadeInUp" data-delay=".6"><a href="#"><em
                             class="fab fa-medium-m"></em></a></li>
                 </ul>
-                <a href="index-2.html" class="footer-logo"><img src="images/logo-full-white.png"
-                                                                srcset="images/logo-full-white2x.png 2x"></a><span
+                <a href="index-2.html" class="footer-logo">
+    <img src="{% static 'images/logo-full-white.png' %}"  srcset="images/logo-full-white2x.png 2x"></a><span
                     class="copyright-text">Copyright &copy; 2018, ICO Crypto. Template Made By <a
                     href="http://softnio.com/" target="_blank">Softnio</a> &amp; Handcrafted by iO.<span>All trademarks and copyrights belong to their respective owners.</span></span>
             </div>
         </div>
     </div>
-</div><!-- End Section --><!-- Preloader !remove please if you do not want -->
+</div>
+<!-- End Section -->
+<!-- Preloader !remove please if you do not want -->
 <div id="preloader">
     <div id="loader"></div>
     <div class="loader-section loader-top"></div>
     <div class="loader-section loader-bottom"></div>
-</div><!-- Preloader End --><!-- JavaScript (include all script here) -->
-{% include 'base.html' %}
+</div>
+<!-- Preloader End -->
+<!-- JavaScript (include all script here) -->
+
+{% include "base.html" %}
+
 </body>
-<!-- Mirrored from demo.themenio.com/ico/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jul 2018 19:13:30 GMT -->
+
 </html>
