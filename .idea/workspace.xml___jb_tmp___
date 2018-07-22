@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47d14455-e6f3-4d7b-a226-c247002ae6f5" name="Default" comment="" />
+    <list default="true" id="47d14455-e6f3-4d7b-a226-c247002ae6f5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/publicsite/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/apis/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/customers/customer_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/customers/customer_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/customers/customer_statement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/dashboard/dashboard_admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/developer/module_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/modules/developer/module_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/publicsite/common/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/publicsite/common/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YottaRobotics/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/YottaRobotics/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/publicsite/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="145">
               <caret line="1139" column="24" selection-start-line="1139" selection-start-column="24" selection-end-line="1139" selection-end-column="24" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -63,6 +84,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/assets/js/script.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -77,13 +112,12 @@
     <findStrings>
       <find>link</find>
       <find>.js</find>
-      <find>jpg&quot;</find>
+      <find />
       <find>demo</find>
-      <find>fa fa-shopping-cart</find>
-      <find>demo-panel</find>
+      <find />
     </findStrings>
     <replaceStrings>
-      <replace>jpg' %}&quot;</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -99,7 +133,6 @@
         <option value="$PROJECT_DIR$/publicsite/views.py" />
         <option value="$PROJECT_DIR$/templates/publicsite/index.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/static/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -112,7 +145,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="33" />
     <option name="width" value="1325" />
     <option name="height" value="768" />
@@ -146,6 +179,13 @@
             <path>
               <item name="YottaRobotics" type="b2602c69:ProjectViewProjectNode" />
               <item name="YottaRobotics" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YottaRobotics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YottaRobotics" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -169,12 +209,13 @@
     <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\YottaRobotics\YottaRobotics\templates\publicsite" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\YottaRobotics\YottaRobotics\templates\publicsite" />
       <recent name="E:\YottaRobotics\YottaRobotics\templates" />
       <recent name="E:\YottaRobotics\YottaRobotics\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\YottaRobotics\YottaRobotics\templates\publicsite" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -228,6 +269,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -235,8 +277,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26243567" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26243567" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -431,25 +473,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="214" column="107" selection-start-line="214" selection-start-column="107" selection-end-line="214" selection-end-column="107" />
-          <folding>
-            <element signature="e#1241#1248#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/publicsite/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="145">
           <caret line="1139" column="24" selection-start-line="1139" selection-start-column="24" selection-end-line="1139" selection-end-column="24" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -485,6 +513,13 @@
             <element signature="n#div#4;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,37 @@
+{% load i18n static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="section subscribe-section-s2 section-bg section-dark" id="join">
+    <div class="container">
+        <div class="subscribe-box animated" data-animate="fadeInUp" data-delay=".2">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="heading-sm-s3"><h5>Don't miss out, Stay updated</h5>
+                        <p>Sign up for updates and market news. Subscribe to our newsletter and receive update about
+                            ICOs and crypto tips.</p></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="gaps size-2x"></div>
+                    <form id="subscribe-form" action="http://demo.themenio.com/ico/form/subscribe.php" method="post"
+                          class="subscription-form inline-form-s2"><input type="text" name="youremail"
+                                                                          class="input-round-s2 required email"
+                                                                          placeholder="Enter your email address"><input
+                            type="text" class="d-none" name="form-anti-honeypot" value="">
+                        <button type="submit" class="btn">Subscribe</button>
+                        <div class="subscribe-results"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
