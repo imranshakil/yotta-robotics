@@ -20,4 +20,7 @@ from django.conf.urls import url, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', include(('publicsite.urls','publicsite'), namespace='publicsite')),
+
+    path('publicsite/', include('publicsite.urls')),
+
 ]

@@ -23,6 +23,3 @@ def blog(request):
 def contact(request):
     return render(request, 'publicsite/commom/contact.html', {'contact': contact})
 
-
-def customeradd(request):
-    return render(request, 'modules/customers/customer_add.html')
