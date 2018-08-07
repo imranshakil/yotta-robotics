@@ -1,4 +1,3 @@
-
 from django.shortcuts import render
 
 # Create your views here.
@@ -23,3 +22,5 @@ def blog(request):
 def contact(request):
     return render(request, 'publicsite/commom/contact.html', {'contact': contact})
 
+def join(request):
+    return render(request, 'publicsite/user/join.html', {'join': join})

@@ -2,8 +2,8 @@
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	
-<!-- Mirrored from colorlib.com/preview/theme/robotics/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jul 2018 05:54:30 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -37,14 +37,13 @@
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="#">Home</a></li>
+                    <li class="menu-active"><a href="{% url 'home' %}">Home</a></li>
 
                     <li><a href="{% url 'about' %}">About Us</a></li>
                     <li><a href="{% url 'services' %}">Services</a></li>
                     <li><a href="{% url 'products' %}">Products</a></li>
                     <li><a href="{% url 'blog' %}">Blog</a></li>
                     <li><a href="{% url 'contact' %}">Contact</a></li>
-
                     <li class="menu-has-children"><a href="#">Dropdown</a>
                         <ul>
                             <li><a href="elements.html">Elements</a></li>
@@ -57,9 +56,13 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm btn-outline menu-link" href="{% url 'join' %}">Join With Us</a>
+                    </li>
 
                 </ul>
-            </nav><!-- #nav-menu-container -->
+            </nav>
+            <!-- #nav-menu-container -->
         </div>
     </div>
 </header>

@@ -17,14 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 
+from publicpage import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    url(r'^$', include(('publicpage.urls','publicpage'), namespace='publicpage')),
-
-    #path('publicsite/', include('publicsite.urls')),
-    path('publicpage/', include('publicpage.urls')),
-
-
+    path('', views.home, name='home'),
+    url(r'^about/', views.about, name='about'),
+    url(r'^products/', views.products, name='products'),
+    url(r'^blog/', views.blog, name='blog'),
+    url(r'^contact/', views.contact, name='contact'),
+    url(r'^services/', views.services, name='services'),
+    url(r'^join/', views.join, name='join'),
 
 ]
