@@ -1,0 +1,50 @@
+{% load i18n static %}
+
+<div id="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="content-header" class="clearfix">
+                        <div class="pull-left">
+                            <h1>
+                                {% if request.GET.rf %}
+                                    {% if request.GET.rf != 'None' %}
+                                        {{ request.GET.rf }}
+                                    {% else %}
+                                        Dashboard
+                                    {% endif %}
+                                {% else %}
+                                    Dashboard
+                                {% endif %}
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% if request.GET.rf %}
+                {% if request.GET.rf != 'None' %}
+                    {% if request.GET.rf == 'dashboard' %}
+                        {% include 'modules/dashboard/dashboard_admin.html' %}
+
+                    {% elif request.GET.rf == 'Customer' %}
+                        {% if request.GET.qrc == 'customerlist' %}
+                            {% include 'modules/customers/customer_list.html' %}
+                        {% elif request.GET.qrc == 'customeradd' %}
+                            {% include 'modules/customers/customer_add.html' %}
+                        {% elif request.GET.qrc == 'customerstatement' %}
+                            {% include 'modules/customers/customer_statement.html' %}
+                        {% endif %}
+                    {% endif %}
+                {% else %}
+                    <h1>Invalid Request</h1>
+                {% endif %}
+            {% else %}
+                {% include 'modules/dashboard/dashboard_admin.html' %}
+                {#<h1>Invalid Request</h1>#}
+            {% endif %}
+        </div>
+    </div>
+    {% include 'common/footer.html' %}
+</div>

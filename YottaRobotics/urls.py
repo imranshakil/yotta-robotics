@@ -13,18 +13,47 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+# from zoompay import views
+
 from django.conf.urls import url, include
+from django.contrib.auth.models import User
+from rest_framework import routers, serializers, viewsets
+
+
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ('url', 'id', 'username', 'email', 'is_staff')
+
+# ViewSets define the view behavior.
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+# Routers provide an easy way of automatically determining the URL conf.
+router = routers.DefaultRouter()
+router.register(r'users', UserViewSet)
+
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
 
 
 urlpatterns = [
+    #url(r'^$', views.home, name='home'),
+    url(r'^$', include(('publicpage.urls', 'publicpage'), namespace='publicpage')),
     path('admin/', admin.site.urls),
-    url(r'^$', include(('publicpage.urls','publicpage'), namespace='publicpage')),
-
-    #path('publicsite/', include('publicsite.urls')),
+    path('login/', include('login.urls')),
     path('publicpage/', include('publicpage.urls')),
 
-
-
+    path('apis/', include('apis.urls')),
+    path('appsapi/', include('appsapi.urls')),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
+    url('api/', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    # url(r'^api-auth/', include('rest_framework.urls')),
 ]

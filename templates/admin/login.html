@@ -1,0 +1,150 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}{{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/login.css" %}"/>
+    {{ form.media }}
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} login{% endblock %}
+
+{% block usertools %}{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content %}
+    {% if form.errors and not form.non_field_errors %}
+        <p class="errornote">
+            {% if form.errors.items|length == 1 %}{% trans "Please correct the error below." %}{% else %}
+                {% trans "Please correct the errors below." %}{% endif %}
+        </p>
+    {% endif %}
+    <div id="content-main">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="login-box" style="margin-top: 200px; opacity: 1">
+                        <div id="login-box-holder">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <header id="login-header">
+                                        <div id="login-logo">
+                                            <img src="view/uploader/logo/logo.png" alt=""/>
+                                        </div>
+
+                                    </header>
+                                    <div id="login-box-inner">
+                                        <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+
+                                            {% if form.non_field_errors %}
+                                                {% for error in form.non_field_errors %}
+                                                    <div style="color: red;" class="alert alert-danger' alert-custom alert-dismissible">
+                                                        <button type="button" class="close" data-dismiss="alert"
+                                                                aria-label="Close"><span
+                                                                aria-hidden="true">×</span>
+                                                        </button>
+                                                        <h4 class="alert-title">{{ error }}</h4>
+                                                    </div>
+                                                {% endfor %}
+                                            {% endif %}
+
+
+                                            {% if user.is_authenticated %}
+                                                <div class="errornote">
+                                                    {% blocktrans trimmed %}
+                                                        You are authenticated as {{ username }}, but are not authorized
+                                                        to
+                                                        access this page. Would you like to login to a different
+                                                        account?
+                                                    {% endblocktrans %}
+                                                </div>
+                                            {% endif %}
+
+                                            <div class="input-group">
+                                                {{ form.username.errors }}
+                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                <input class="form-control" type="text" name="username" id="id_username"
+                                                       required placeholder="Userid">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                                <input type="password" name="password" id="id_password" required
+                                                       class="form-control"
+                                                       placeholder="Password">
+                                                <input type="hidden" name="next" value="{{ next }}"/>
+                                            </div>
+                                            <div id="remember-me-wrapper">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="checkbox-nice">
+                                                            <input type="checkbox" name="remember" value="1"
+                                                                   id="remember-me" checked="checked"/>
+                                                            <label for="remember-me">
+                                                                Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    {% url 'admin_password_reset' as password_reset_url %}
+                                                    {% if password_reset_url %}
+                                                        <div class="password-reset-link">
+                                                            <a href="{{ password_reset_url }}">{% trans 'Forgotten your password or username?' %}</a>
+                                                        </div>
+                                                    {% endif %}
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <input type="submit" class="btn btn-success col-xs-12"
+                                                           value="{% trans 'Log in' %}"/>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <p class="social-text">Copyright © Creative IT Soft</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="row" style="display: none;">
+                                                <div class="col-xs-12">
+                                                    <p class="social-text">Or login with</p>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="display: none;">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <button type="submit"
+                                                            class="btn btn-primary col-xs-12 btn-facebook">
+                                                        <i class="fa fa-facebook"></i> facebook
+                                                    </button>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <button type="submit" class="btn btn-primary col-xs-12 btn-twitter">
+                                                        <i class="fa fa-twitter"></i> Twitter
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="login-box-footer">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

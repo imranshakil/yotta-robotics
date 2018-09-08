@@ -25,7 +25,7 @@ SECRET_KEY = 'tq_c@q-y-qebx&5*-zv6h^2od@t=jxxm$q+9!+avu_2-vyu)oq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'publicpage',
+    'yottamaster',
+    'apis',
+    'appsapi',
+    'classes',
+    'login',
 ]
 
 MIDDLEWARE = [

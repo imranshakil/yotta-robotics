@@ -10,12 +10,12 @@
 
     <div class="panel">
         <div class="panel-heading">
-            <h3 class="panel-title">Product List</h3>
+            <h3 class="panel-title">Customer List</h3>
         </div>
         <div class="panel-body">
             <div class="pad-btm form-inline">
                 <div class="row">
-                    <div class="col-sm-12" style="text-align:right;">
+                    <div class="col-sm-12" style="text-align:right; margin-bottom: 15px;">
                         <a class="form-group">
                             <button type="submit" class="btn btn-primary mb-4" value="{% url 'customerList' %}">
                                 <a href="{% url 'customeradd' %}">Add New</a>
@@ -23,7 +23,7 @@
                         </a></div>
                 </div>
             </div>
-        </div>
+
 
         <div class="limiter">
             <div class="wrap-table100">
@@ -38,6 +38,7 @@
                             <th class="min-tablet">Email</th>
                             <th class="min-tablet">Created</th>
                             <th class="min-tablet">Updated</th>
+                            <th class="min-tablet">Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -50,6 +51,13 @@
                                 <td>{{ post.email }}</td>
                                 <td>{{ post.created }}</td>
                                 <td>{{ post.updated }}</td>
+                                <td>
+                                <a class="btn btn-circle" style="background-color: #0a1c77 " href="/customers/customeredit/{{ post.id }}">
+                                    <i class="fa fa-pencil"></i>
+                                </a>
+                                <a class="btn btn-circle" style="background-color: red" href="/customers/customerdelete/{{ post.id }}">
+                                    <i class="fa fa-trash"></i>
+                                </a>
                             </tr>
                         {% endfor %}
                         </tbody>
@@ -57,7 +65,8 @@
                 </div>
             </div>
         </div>
-    {% include 'hotel/table_bottom.html' %}
+    {% include 'hotel/hotels/table_bottom.html' %}
 
     </div>
+</div>
 </div>
