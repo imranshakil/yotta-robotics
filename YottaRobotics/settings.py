@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'appsapi',
     'classes',
     'login',
+    'yottablog',
+
 ]
 
 MIDDLEWARE = [
