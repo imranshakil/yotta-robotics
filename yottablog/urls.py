@@ -17,10 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 
-from publicpage import views
+from yottablog import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
-
-
+    #path('', views.home, name='home'),
+    url(r'^blog_main/', views.blog_main, name='blog_main')
 ]

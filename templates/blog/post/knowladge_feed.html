@@ -1,0 +1,28 @@
+{% load i18n static %}
+<div class="align-middle">
+    <div class="card">
+      <h2>Share Your Technological Knowladge</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+
+        <!--All input box-->
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+          <script>tinymce.init({ selector:'textarea' });</script>
+          <label for="comment" class="control-label">Post Your Personal Views</label>
+            <textarea name = "comment" placeholder = "Comment" id = "comment" class="form-control"
+                   value="" ></textarea>
+
+        <div class="col-auto" style="text-align: right; margin-top: 15px; margin-right: -16px">
+         <button type="submit" class="btn btn-primary mb-4" value="">Submit</button>
+        </div>
+
+    </div>
+    <!--All input box end-->
+
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+</div>
