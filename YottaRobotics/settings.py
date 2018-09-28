@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'login',
     'yottablog',
 
+
 ]
 
 MIDDLEWARE = [
@@ -148,6 +149,8 @@ STATICFILES_DIRS = (
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # LOGIN_REDIRECT_URL = '/'
 
