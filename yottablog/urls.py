@@ -21,5 +21,11 @@ from yottablog import views
 
 urlpatterns = [
     #path('', views.home, name='home'),
-    url(r'^blog_main/', views.blog_main, name='blog_main')
+    url(r'^blog_main/', views.blog_main, name='blog_main'),
+    url(r'^blog_header/', views.blog_header, name='blog_header'),
+
+    #Blog site url only
+    #url(r'^blog_menu', views.blog_menu, name='blog_menu'),
+    #url(r'^highlight', views.highlight, name='highlight'),
+    #url(r'^public_news_feed', views.public_news_feed, name='public_news_feed'),
 ]

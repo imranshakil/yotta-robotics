@@ -27,7 +27,7 @@
 
 <!-- #header -->
 <div>
-{% include 'publicsite/commom/header.html' %}
+{% include 'blog/common/blog_header.html' %}
 
 </div>
 
@@ -37,67 +37,26 @@
 
 <!--blog section start-->
 <div class="blog-main">
-
     <div class="row" style="margin-top: 46px;">
 
         <!--start left section-->
         <div class="col-sm-2">
-            <div class="sidebar">
-                <div class="blog-menu">
-                  <h3 style="border-bottom-width: 3px;  border-bottom-style: outset; border-bottom-color: #1da6e0;;">Home</h3>
-                    <br>
+            {% include 'blog/post/blog_menu.html' %}
+        </div>
 
-                    <a href="./?" >
-                        <i class="fa fa-dashboard" style="color: #1da6e0"></i>
-                        <span style="color:black;">&nbsp; Yotta Blog</span>
-                    </a>
-                    <br>
-
-                    <a href="./?" >
-                        <i class="fa fa-user" style="color: #1da6e0"></i>
-                        <span style="color:black;">&nbsp; Users</span>
-                    </a>
-                    <br>
-
-
-                    <a href="./?" >
-                        <i class="fa fa-tag" style="color: #1da6e0"></i>
-                        <span style="color:black;">&nbsp; Tag</span>
-                    </a>
-                    <br>
-                </div>
-            </div>
-            </div>
         <!--End left section-->
 
         <!--start middle section-->
         <div class="col-sm-7">
 
-          {% include 'blog/post/knowladge_feed.html' %}
+          {% include 'blog/post/public_news_feed.html' %}
 
         </div>
         <!--End middle section-->
 
         <!--start right section-->
         <div class="col-sm-3">
-            <div class="card">
-              <h3>Popular Post</h3>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div>
-            </div>
-
-            <div class="card">
-              <h3>Popular Post</h3>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div>
-            </div>
-
-            <div class="card">
-              <h3>Follow Me</h3>
-              <p>Some text..</p>
-            </div>
+            {% include 'blog/post/highlight.html' %}
         </div>
         <!--End right section-->
     </div>
