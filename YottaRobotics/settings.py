@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'classes',
     'login',
     'yottablog',
+    'yotta',
+
 
 ]
 

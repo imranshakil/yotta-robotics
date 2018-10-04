@@ -50,6 +50,7 @@ urlpatterns = [
     path('login/', include('login.urls')),
     path('publicpage/', include('publicpage.urls')),
     path('yottablog/', include('yottablog.urls')),
+    path('yotta/', include('yotta.urls')),
     path('apis/', include('apis.urls')),
     path('appsapi/', include('appsapi.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
