@@ -22,6 +22,10 @@ from django.urls import path, include
 from django.conf.urls import url, include
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
+from main.views import IndexPageView, ChangeLanguageView
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -50,11 +54,16 @@ urlpatterns = [
     path('login/', include('login.urls')),
     path('publicpage/', include('publicpage.urls')),
     path('yottablog/', include('yottablog.urls')),
-    path('yotta/', include('yotta.urls')),
     path('apis/', include('apis.urls')),
     path('appsapi/', include('appsapi.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url('api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    # url(r'^api-auth/', include('rest_framework.urls')),
+    path('', IndexPageView.as_view(), name='index'),
+
+    #path('language/', ChangeLanguageView.as_view(), name='change_language'),
+    path('accounts/', include('accounts.urls')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

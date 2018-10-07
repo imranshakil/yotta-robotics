@@ -44,10 +44,18 @@ INSTALLED_APPS = [
     'classes',
     'login',
     'yottablog',
-    'yotta',
-
+    'main',
+    'accounts',
 
 ]
+
+
+IS_PRODUCTION = os.environ.get('IS_PRODUCTION')
+
+if IS_PRODUCTION:
+    from .conf.production.settings import *
+else:
+    from .conf.development.settings import *
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -64,8 +72,7 @@ ROOT_URLCONF = 'YottaRobotics.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

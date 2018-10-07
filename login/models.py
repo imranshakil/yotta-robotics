@@ -1,4 +1,3 @@
-from django.db import models
 
 # Create your models here.
 from datetime import date
@@ -16,6 +15,7 @@ class Users(models.Model):
     last_name = models.CharField(max_length=60)
     username = models.CharField(max_length=60)
     email = models.EmailField(max_length=80)
+    password = models.CharField(max_length=100, blank=True)
     phone = models.IntegerField(max_length=18)
     birth_date = models.DateField(null=True, blank=True)
     is_active = models.BooleanField(('active'), default=True)
@@ -30,3 +30,7 @@ class Users(models.Model):
     website = models.URLField(max_length=200, blank=False)
 
 
+class Post(models.Model):
+
+    title = models.CharField(max_length=64, unique=True)
+    content = models.TextField()

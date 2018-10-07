@@ -47,11 +47,16 @@
         <!--End left section-->
 
         <!--start middle section-->
-        <div class="col-sm-7">
 
-          {% include 'blog/post/public_news_feed.html' %}
+        <div class="col-sm-7">
+            {% if request.user.is_authenticated %}
+                {% include 'blog/post/knowladge_feed.html' %}
+            {% else %}
+                {% include 'blog/post/public_news_feed.html' %}
+            {% endif %}
 
         </div>
+
         <!--End middle section-->
 
         <!--start right section-->
